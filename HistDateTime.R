@@ -9,6 +9,6 @@ x$pDateTime <- as.POSIXct(x$hit, format="%Y%m%d %H%M%S")
 x$pTime = format(x$pDateTime, format="%H:%M:%S")
 x$pDate = format(x$pDateTime, format="%M/%d/%Y")
 
-
+x$pDateTime2 <- strptime(x$hit, "%m/%d/%Y %H")
 ggplot(x, aes(x=pDateTime2)) + geom_histogram() + opts(axis.text.x = theme_text(angle=90))
 
