@@ -8,3 +8,6 @@ audioscrobbler <- read.transactions(
 
 #install.packages("nutshell")
 library(nutshell)
+audioscrobbler.apriori <- apriori(
+  data=audioscrobbler,
+  parameter=new("APparameter", support=0.0645))
