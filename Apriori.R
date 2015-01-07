@@ -11,3 +11,4 @@ rules
 inspect(head(sort(rules, by ="lift"),4pl))
 plot(x, method = NULL, measure = "support", shading = "lift", interactive = FALSE, data = NULL, control = NULL) 
 plot(rules)
+plot(rules, shading="order", control=list(main = "Two-key plot"))
